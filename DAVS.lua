@@ -126,7 +126,7 @@ DevId = Config.DevId
 SudoIds = {Config.SudoIds,1873723582}
 DAVS = Config.DAVS
 TokenBot = Config.TokenBot
-NameBot = (DevAbd:get(DAVS..'Abd:NameBot') or 'ترون')
+NameBot = (DevAbd:get(DAVS..'Abd:NameBot') or 'ديفس')
 --     Source DAVS     --
 FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"..'\27[m'
 FilesNumber = 0
@@ -979,8 +979,8 @@ end
 DevAbd:del(DAVS.."Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
-if text and text:match('^'..(DevAbd:get(DAVS..'Abd:NameBot') or "ترون")..' ') then
-data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..(DevAbd:get(DAVS..'Abd:NameBot') or "ترون")..' ','')
+if text and text:match('^'..(DevAbd:get(DAVS..'Abd:NameBot') or "ديفس")..' ') then
+data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..(DevAbd:get(DAVS..'Abd:NameBot') or "ديفس")..' ','')
 end
 if data.message_.content_.text_ then
 local NewCmmd = DevAbd:get(DAVS.."Set:Cmd:Group:New1"..msg.chat_id_..":"..data.message_.content_.text_)
@@ -1278,7 +1278,7 @@ end
 if ChatType == 'pv' then 
 if text == '/start' or text == 'رجوع' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙مرحبا عزيزي المطور \n↯︙انت المطور الاساسي هنا \n↯︙اليك ازرار سورس ترون \n↯︙تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙مرحبا عزيزي المطور \n↯︙انت المطور الاساسي هنا \n↯ اليك ازرار سورس ديفس \n↯︙تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'↫ السورس ↯','وضع اسم البوت'},
 {'↫ المطورين ↯','↫ الاحصائيات ↯'},
@@ -1292,7 +1292,7 @@ return false
 end end
 if text == '↫ تعيين كلايش الاوامر ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بتعديل وتغيير كلايش سورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بتعديل وتغيير كلايش سورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'تغير معلومات الترحيب'},
 {'حذف كليشة الايدي','تعيين كليشة الايدي'},
@@ -1307,7 +1307,7 @@ return false
 end end
 if text == '↫ السورس ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بتحديث  سورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بتحديث  سورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'تحديث السورس','تحديث'},
 {'جلب نسخه السورس','السيرفر'},
@@ -1319,7 +1319,7 @@ return false
 end end
 if text == '↫ الاحصائيات ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه ب أحصائيات  سورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه ب أحصائيات  سورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'الاحصائيات'},
 {'المشتركين','المجموعات'},
@@ -1333,7 +1333,7 @@ return false
 end end
 if text == '↫ المطورين ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه ب المطورين لسورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه ب المطورين لسورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'المطورين','الثانويين'},
 {'مسح المطورين','مسح الثانويين'},
@@ -1346,7 +1346,7 @@ return false
 end end
 if text == '↫ التفعيل والتعطيل ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه ب التفعيل والتعطيل لسورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه ب التفعيل والتعطيل لسورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'تعطيل التواصل','تفعيل التواصل'},
 {'تعطيل ترحيب البوت','تفعيل ترحيب البوت'},
@@ -1360,7 +1360,7 @@ return false
 end end
 if text == '↫ الاذاعه ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بالاذاعه لسورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بالاذاعه لسورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'اذاعه بالتثبيت'},
 {'اذاعه خاص','اذاعه عام'},
@@ -1373,7 +1373,7 @@ return false
 end end
 if text == '↫ العام ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بالعام لسورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بالعام لسورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'اضف رد عام','حذف رد عام'},
 {'الردود العام','مسح ردود العام'},
@@ -1385,7 +1385,7 @@ return false
 end end
 if text == '↫ ردود الخاص ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بردود الخاص لسورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بردود الخاص لسورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'تعيين رد الخاص','حذف رد الخاص'},
 {'جلب رد الخاص'},
@@ -1396,7 +1396,7 @@ return false
 end end
 if text == '↫ الاشتراك الاجباري ↯' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بالاشتراك الاجباري لسورس ترون فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '↯︙اهلا بك مجددا عزيزي المطور \n↯︙اليك الازرار الخاصه بالاشتراك الاجباري لسورس ديفس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'تعيين قناة الاشتراك',' حذف قناة الاشتراك'},
 {'تعيين كليشه الاشتراك','حذف كليشه الاشتراك'},
