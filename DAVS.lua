@@ -3812,7 +3812,7 @@ keyboard.inline_keyboard = {
 {{text = '↯ Developer',url="https://t.me/eeeeeeB"}},
 {{text = '↯ Tws DAVS',url="https://t.me/TeAM_AnGeLebot"}},
 }
-SendInline(msg.chat_id_,Sudo_Welcome,keyboard)
+SendInline(msg.chat_id_,Text,keyboard)
 end
 --     Source DAVS     --
 if ChatType == 'sp' or ChatType == 'gp'  then
