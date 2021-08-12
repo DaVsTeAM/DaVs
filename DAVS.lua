@@ -3812,9 +3812,8 @@ keyboard.inline_keyboard = {
 {{text = '↯ Developer',url="https://t.me/eeeeeeB"}},
 {{text = '↯ Tws DAVS',url="https://t.me/TeAM_AnGeLebot"}},
 }
-
-local msg_id = msg.id_/2097152/0.5
-return https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BxxDx&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+SendInline(msg.chat_id_,Text,nil,keyboard.inline_keyboard)
+return false
 end
 --     Source DAVS     --
 if ChatType == 'sp' or ChatType == 'gp'  then
